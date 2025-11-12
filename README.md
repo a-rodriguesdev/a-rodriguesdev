@@ -9,7 +9,7 @@
   <a href="https://www.linkedin.com/in/%C3%A9velyn-rodrigues-735bb5373/?trk=opento_sprofile_details">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?logo=LinkedIn&logoColor=white" alt="LinkedIn"/>
   </a>
-  <a href="mailto:rodrigueseconsultoria@gmail.com">
+  <a href="mailto:evelynrodriguesdev@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white" alt="E-mail"/>
   </a>
   <a href="https://www.instagram.com/evelynpessoal?igsh=MTM3Zmh0dTV1bWkzbA%3D%3D&utm_source=qr">
