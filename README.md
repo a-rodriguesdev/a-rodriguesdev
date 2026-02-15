@@ -32,22 +32,7 @@ README de Perfil — @a-rodriguesdev
 ---
 
 ## 📊 GitHub em números
-<!-- Cards lado a lado para reduzir altura — uso de endpoint mirror + cache-buster v=1 -->
-<table align="center">
-  <tr>
-    <td>
-      <img height="165"
-        src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=a-rodriguesdev&show_icons=true&hide=prs,issues&theme=dracula&cache_seconds=7200&v=1"
-        alt="GitHub Stats"/>
-    </td>
-    <td>
-      <img height="165"
-        src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=a-rodriguesdev&layout=compact&langs_count=10&theme=dracula&cache_seconds=7200&v=1"
-        alt="Top Languages"/>
-    </td>
-  </tr>
-</table>
-
+<!-- Removi os cards que estavam causando erro; mantive o streak -->
 <p align="center">
   <img height="165" src="https://streak-stats.demolab.com?user=a-rodriguesdev&theme=dracula&hide_border=false" alt="streak"/>
 </p>
@@ -87,3 +72,4 @@ README de Perfil — @a-rodriguesdev
     </td>
   </tr>
 </table>
+
