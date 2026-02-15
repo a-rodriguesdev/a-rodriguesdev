@@ -1,0 +1,154 @@
+name: Update profile README (simple)
+
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Make assets folder
+        run: mkdir -p assets
+
+      - name: Download GitHub Stats (primary -> mirror)
+        run: |
+          set -e
+          PRIMARY="https://github-readme-stats.vercel.app/api?username=a-rodriguesdev&show_icons=true&hide=prs,issues&theme=dracula&cache_seconds=1"
+          MIRROR="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=a-rodriguesdev&show_icons=true&hide=prs,issues&theme=dracula"
+          if curl -fsSL "$PRIMARY" -o assets/github_stats.png; then
+            echo "Downloaded stats (primary)"
+          elif curl -fsSL "$MIRROR" -o assets/github_stats.png; then
+            echo "Downloaded stats (mirror)"
+          else
+            echo "Warning: Failed to download GitHub Stats images; continuing without update"
+          fi
+
+      - name: Download Top Languages (primary -> mirror)
+        run: |
+          set -e
+          PRIMARY="https://github-readme-stats.vercel.app/api/top-langs/?username=a-rodriguesdev&layout=compact&langs_count=10&theme=dracula&cache_seconds=1"
+          MIRROR="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=a-rodriguesdev&layout=compact&langs_count=10&theme=dracula"
+          if curl -fsSL "$PRIMARY" -o assets/top_langs.png; then
+            echo "Downloaded top-langs (primary)"
+          elif curl -fsSL "$MIRROR" -o assets/top_langs.png; then
+            echo "Downloaded top-langs (mirror)"
+          else
+            echo "Warning: Failed to download Top Languages; continuing"
+          fi
+
+      - name: Download Streak (primary -> alt)
+        run: |
+          set -e
+          PRIMARY="https://streak-stats.demolab.com?user=a-rodriguesdev&theme=dracula&hide_border=false"
+          ALT="https://github-readme-streak-stats.herokuapp.com/?user=a-rodriguesdev&theme=dark"
+          if curl -fsSL "$PRIMARY" -o assets/streak.png; then
+            echo "Downloaded streak (primary)"
+          elif curl -fsSL "$ALT" -o assets/streak.png; then
+            echo "Downloaded streak (alt)"
+          else
+            echo "Warning: Failed to download streak; continuing"
+          fi
+
+      - name: Create / overwrite README.md (references local assets)
+        run: |
+          cat > README.md <<'README'
+<!--
+README de Perfil — @a-rodriguesdev
+-->
+
+<p align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&duration=2800&pause=600&center=true&vCenter=true&width=900&color=%23FF69B4&lines=Oi%2C+eu+sou+a+%C3%89velyn+Rodrigues+%F0%9F%91%8B;Analista+de+Sistemas+%7C+Full-stack+%7C+Cybersecurity;FIAP+%E2%80%A2+projetos+pr%C3%A1ticos+e+foco+em+qualidade;Bem-vinda(o)+ao+meu+GitHub!"/>
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/%C3%A9velyn-rodrigues-735bb5373/?trk=opento_sprofile_details">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?logo=LinkedIn&logoColor=white" alt="LinkedIn"/>
+  </a>
+  <a href="mailto:rodrigueseconsultoria@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white" alt="E-mail"/>
+  </a>
+  <a href="https://www.instagram.com/evelynpessoal?igsh=MTM3Zmh0dTV1bWkzbA%3D%3D&utm_source=qr">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?logo=instagram&logoColor=white" alt="Instagram"/>
+  </a>
+</p>
+
+---
+
+## ✨ Sobre mim
+- 🎓 Estudante de **Análise e Desenvolvimento de Sistemas (FIAP)** com trilha de **Cybersecurity**.  
+- 💻 **Full-stack** com base sólida em **lógica, dados, testes e segurança**.  
+- 🌎 Interesse em projetos **remotos/internacionais** e produtos com **acessibilidade** e **qualidade**.
+
+---
+
+## 📊 GitHub em números
+<table align="center">
+  <tr>
+    <td>
+      <img height="165" src="./assets/github_stats.png" alt="GitHub Stats (local)"/>
+      <br/><a href="https://github.com/a-rodriguesdev">Ver perfil no GitHub</a>
+    </td>
+    <td>
+      <img height="165" src="./assets/top_langs.png" alt="Top Languages (local)"/>
+    </td>
+  </tr>
+</table>
+
+<p align="center">
+  <img height="165" src="./assets/streak.png" alt="Streak (local)"/>
+</p>
+
+---
+
+## 📚 Em estudo agora
+- **Java** (POO/coleções) e **Spring Boot** • **Python** para automação  
+- **Cybersecurity**: OWASP Top 10, fundamentos de redes, Linux, hardening e boas práticas  
+- **Web Full-stack**: HTML/CSS/JS/TS, React e Node.js  
+- **SQL & Modelagem** (MER, normalização)
+
+---
+
+## 🧰 Tech Stack
+<table align="center">
+  <tr>
+    <td align="center">
+      <b>Core</b><br/>
+      <img src="https://skillicons.dev/icons?i=java,python,js,ts" />
+    </td>
+    <td align="center">
+      <b>Back-end & APIs</b><br/>
+      <img src="https://skillicons.dev/icons?i=spring,nodejs,postman" />
+    </td>
+    <td align="center">
+      <b>Front-end</b><br/>
+      <img src="https://skillicons.dev/icons?i=html,css,react,bootstrap" />
+    </td>
+    <td align="center">
+      <b>Databases</b><br/>
+      <img src="https://skillicons.dev/icons?i=mysql,postgres,sqlite" />
+    </td>
+    <td align="center">
+      <b>Tools</b><br/>
+      <img src="https://skillicons.dev/icons?i=git,linux,vscode,figma,docker" />
+    </td>
+  </tr>
+</table>
+README
+
+      - name: Commit README and assets
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: 'github-actions[bot]'
+          author_email: '41898282+github-actions[bot]@users.noreply.github.com'
+          message: 'chore: update profile README + cards'
+          add: 'README.md assets/*'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
