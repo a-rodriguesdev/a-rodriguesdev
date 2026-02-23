@@ -1,12 +1,6 @@
-<!--
-README de Perfil — @a-rodriguesdev
--->
-
-<!-- Cabeçalho com efeito de digitação (rosa) -->
+<h1 align="center">Évelyn Rodrigues</h1>
 <p align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&duration=2800&pause=600&center=true&vCenter=true&width=900&color=%23FF69B4&lines=Oi%2C+eu+sou+a+%C3%89velyn+Rodrigues+%F0%9F%91%8B;Analista+de+Sistemas+%7C+Full-stack+%7C+Cybersecurity;FIAP+%E2%80%A2+projetos+pr%C3%A1ticos+e+foco+em+qualidade;Bem-vinda(o)+ao+meu+GitHub!"/>
-  </a>
+  Backend-Oriented Developer • Cybersecurity Focus • Data & System Architecture
 </p>
 
 <!-- Badges de contato -->
@@ -25,11 +19,19 @@ README de Perfil — @a-rodriguesdev
 ---
 
 ## ✨ Sobre mim
-- 🎓 Estudante de **Análise e Desenvolvimento de Sistemas (FIAP)** com trilha de **Cybersecurity**.  
-- 💻 **Full-stack** com base sólida em **lógica, dados, testes e segurança**.  
-- 🌎 Interesse em projetos **remotos/internacionais** e produtos com **acessibilidade** e **qualidade**.
+- 🎓 Estudante de **Análise e Desenvolvimento de Sistemas (FIAP)** — **2º ano**
+- 🔐 Foco em **segurança de aplicações**, **boas práticas**, **arquitetura limpa** e **qualidade**
+- 🧠 Base forte em **lógica**, **modelagem de dados**, **testes** e construção de sistemas
+- 🌍 Interesse em **projetos remotos/internacionais** e produtos com **acessibilidade e experiência**
 
 ---
+
+## 🎯 Direção de carreira
+
+Evoluir como **engenheira de software orientada a segurança**, com base forte em **back-end e dados**, construindo sistemas **seguros, escaláveis e bem modelados**, mirando oportunidades **remotas/internacionais**.
+
+---
+
 
 ## 📊 GitHub em números
 <!-- Removi os cards que estavam causando erro; mantive o streak -->
@@ -40,10 +42,11 @@ README de Perfil — @a-rodriguesdev
 ---
 
 ## 📚 Em estudo agora
-- **Java** (POO/coleções) e **Spring Boot** • **Python** para automação  
-- **Cybersecurity**: OWASP Top 10, fundamentos de redes, Linux, hardening e boas práticas  
-- **Web Full-stack**: HTML/CSS/JS/TS, React e Node.js  
-- **SQL & Modelagem** (MER, normalização)
+- **Java (POO/coleções)** e fundamentos para **APIs**
+- **Spring Boot** (estruturação de back-end e boas práticas)
+- **Cybersecurity:** OWASP Top 10, fundamentos de redes, **Linux**, hardening e boas práticas
+- **Web Full-stack:** HTML/CSS/JS/TS, React e Node.js
+- **SQL & Modelagem:** MER, normalização, chaves, constraints e DDL
 
 ---
 
@@ -72,4 +75,21 @@ README de Perfil — @a-rodriguesdev
     </td>
   </tr>
 </table>
+
+---
+
+## 🏗 Projetos acadêmicos (FIAP) e construção prática
+
+### 💳 Fintech / Sistemas (Java + SQL)
+- Modelagem (MER → lógico → físico)
+- Normalização, constraints e integridade referencial
+- Implementação em **Java (POO/coleções)** e organização por camadas
+
+### 🎮 SwiftPro (Gamificação)
+- Perfis, ranking, missões, pontos e regras de negócio
+- Estruturação do domínio e modelagem relacional consistente
+
+### 📱 Android (Kotlin + Firebase)
+- Firestore, telas e dados dinâmicos
+- Organização de componentes e integração
 
